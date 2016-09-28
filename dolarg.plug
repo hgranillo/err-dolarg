@@ -1,0 +1,11 @@
+[Core]
+name = DolARG
+module = dolarg
+
+[Documentation]
+description = Search for dolar price in a third party API.
+
+[Python]
+version = 3
+
+[Errbot]

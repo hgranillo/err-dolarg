@@ -3,7 +3,7 @@ import json
 import urllib.request
 
 class DolARG(BotPlugin):
-    """ placeholder """
+    """ Prints current dolar currency in ARS """
 
     @botcmd
     def dolar(self, msg, args):
@@ -12,7 +12,7 @@ class DolARG(BotPlugin):
         headers={"User-Agent":user_agent,'Accept-Encoding':'utf-8'}
 
         request = urllib.request.Request(url, None, headers)
-        res = urllib.request.urlopen(request).read().decode("utf-8")
+        res = urllib.request.urlopen(request).read().decode("utf-8-sig")
 
         data_string = res.replace('dolarjsonpCallback(', '')
         data_string2 = data_string.replace(');', '')
